@@ -1,0 +1,25 @@
+@import "base.less";
+@import "palette.less";
+
+@font-face {
+    @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css");
+    font-family       : Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif !important;
+    font-weight       : normal;
+    font-style        : normal;
+}
+
+body {
+    background: @background;
+    color     : white;
+    display   : flex;
+    margin    : auto;
+}
+
+// components
+@import "component/popup.less";
+@import "component/dialogue/alert.less";
+@import "component/dialogue/confirm.less";
+@import "component/dialogue/prompt.less";
+
+// views
+@import "view/home.less";
