@@ -31,34 +31,23 @@ export default class Home implements View {
                         
                         NFT에 토큰을 영구적으로 스테이킹한다면, 다이아몬드 핸드(강성 홀더)를 뛰어넘는 인피니티 핸드가 되는 것이다.`),
                     ),
-                    el(".kronosDAO mt-32 flex flex-col items-center", { id: "KRONOS DAO" },
-                        el("h1.text-5xl font-bold text-center", "KRONOS DAO"),
-                        el("img.block lg:hidden center mt-8 rounded", { src: "/images/kronos.png" }),
-                        el("img.hidden lg:block  center w-1/3 mt-8 rounded", { src: "/images/kronos.png" }),
-                        el(".text-base text-center", `
-                    Kronos DAO는 클레이튼에서 가장 명망있는 DeFi 2.0 프로토콜이다. 
-                    
-                    최근 APR은 236,000%에 육박하며, 매우 단단한 커뮤니티를 갖고 있다.`),
-                    ),
                     el(".buyback content-center mt-32", { id: "BUYBACK FUND" },
                         el("h1.text-5xl font-bold text-center", "BUYBACK FUND"),
                         el(".text-base text-center", `
-                        민팅액의 45%와 오픈씨 거래 수수료(로열티)를 바이백 펀드에 넣는다. 
-                        이후 NFT 홀더가 원하면 바이백 펀드를 통해 그간 받은 이자를 제외한 금액만큼 NFT를 납부하고 돌려받을 수 있다. 
-                        납부받은 NFT는 개발팀에서 시장에 팔아 바이백 펀드를 채운다.
-
-                        즉 민팅 직후에는 바이백 펀드에서 민팅가를 100% 되돌려 받을 수 있다. 
-                        이후 이자 수익이 나오게 된다면 복리 수익에 따라 점차 되돌려받는 수치가 내려가고, 
-                        복리 수익으로 원금 회수가 확정되면 되돌려받는 수치가 0에 수렴하여 바이백 펀드는 종료된다.
+                        Buyback Fund 는 민팅액의 45%로 구성되며 추후 NFT의 오픈씨 거래 수수료(로열티)가 배분됩니다. 
                         
-                        이로써 최대한 원금을 보장한다.`),
+                        민팅으로 NFT 를 구매한 사용자는 최초 민팅가에서 수령한 이자 수익을 제한 금액을 바이백 펀드를 통해 청구할 수 있고 NFT 는 팀이 거래소를 통해 재판매합니다.`),
                     ),
                     el(".mint content-center mt-32", { id: "MINT" },
                         el("h1.text-5xl font-bold text-center", "MINT"),
-                        el("h3.text-3xl mt-8 text-center font-medium", "2월 10일 밤 10:00시"),
-                        el(".text-2xl mt-8 text-center", "민팅가 1,000 클레이"),
-                        el(".text-gray-300 text-sm mt-2 text-center", "민팅가의 50% 스테이킹, 45% 바이백 펀드, 5% 데브 펀드"),
-                        el(".text-gray-300 text-sm text-center", "민팅 개수 10,000개, 팀 보유 물량 없으며 팀에서도 구매를 진행"),
+                        el("h2.text-3xl font-bold mt-8  text-center", "Pre-Sale (Whitelist)"),
+                        el("h3.text-2xl mt-8 text-center font-medium", "2월 10일 밤 10:00시"),
+                        el(".text-gray-300 text-base mt-2 text-center", "1,000 Klay"),
+                        el(".text-gray-300 text-base mt-2 text-center", "총 4,000개"),
+                        el("h2.text-3xl font-bold mt-8  text-center", "Public-Sale"),
+                        el("h3.text-2xl mt-8 text-center font-medium", "2월 10일 밤 11:00시"),
+                        el(".text-gray-300 text-base mt-2 text-center", "1,000 Klay"),
+                        el(".text-gray-300 text-base mt-2 text-center", "총 6,000 개"),
                     ),
                     el(".whiteList content-center mt-32", { id: "WHITELIST" },
                         el("h1.text-5xl font-bold text-center", "WHITELIST"),
@@ -122,7 +111,7 @@ export default class Home implements View {
                             나아가 해외 크립토 투자자들까지 참여할 수 있는 프로젝트로 성장시킬 예정입니다.`
                         ),
                         el("h3.text-3xl font-medium text-center mt-8", "Art & Design 조선우"),
-                        el(".text-base text-center mt-8",
+                        el(".text-base text-center mt-8 mb-8",
                             `현직 게임 개발자이자 NFT 아티스트입니다. 
                             다년간 트위터 작품 활동을 통해 32만 팔로워를 보유하고 있으며, 최근에는 한국의 NFT 및 P2E 게임 프로젝트에도 참여하고 있습니다.`
                         )

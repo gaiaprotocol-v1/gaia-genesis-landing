@@ -26,7 +26,6 @@ export default class Layout implements View {
                                     el(".flex space-x-4"),
                                     el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "STORY", { href: "#STORY" }),
                                     el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "DeFi 2.0", { href: "#DeFi 2.0" }),
-                                    el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "KRONOS DAO", { href: "#KRONOS DAO" }),
                                     el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "BUYBACK FUND", { href: "#BUYBACK FUND" }),
                                     el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "MINT", { href: "#MINT" }),
                                     el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "WHITELIST", { href: "#WHITELIST" }),
