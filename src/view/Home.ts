@@ -47,7 +47,7 @@ export default class Home implements View {
                         el(".text-gray-300 text-base mt-2 text-center", "1,000 Klay"),
                         el(".text-gray-300 text-base mt-2 text-center", "총 6,000 개"),
                     ),
-                    el(".whiteList content-center mt-32", { id: "WHITELIST" },
+                    /*el(".whiteList content-center mt-32", { id: "WHITELIST" },
                         el("h1.text-5xl font-bold text-center", "WHITELIST"),
                         el(".text-base text-center", `
                         - 커뮤니티 빌딩
@@ -77,7 +77,7 @@ export default class Home implements View {
                     4. 2월 9일까지 자산 유지 필수, 민팅 때 자산 재체크 들어감
 
                     5. 1월 21일 금요일 공지`),
-                    ),
+                    ),*/
                     el(".team content-center mt-32", { id: "TEAM" },
                         el("h1.text-5xl font-bold text-center", "TEAM"),
                         el("h3.text-3xl font-medium text-center mt-8", "Director 심영재"),

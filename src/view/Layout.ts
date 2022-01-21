@@ -28,8 +28,8 @@ export default class Layout implements View {
                                     el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "WHY", { href: "#DeFi 2.0" }),
                                     el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "BUYBACK FUND", { href: "#BUYBACK FUND" }),
                                     el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "MINT", { href: "#MINT" }),
-                                    el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "WHITELIST", { href: "#WHITELIST" }),
-                                    el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "ROADMAP", { href: "#ROADMAP" }),
+                                    //el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "WHITELIST", { href: "#WHITELIST" }),
+                                    //el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "ROADMAP", { href: "#ROADMAP" }),
                                     el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "TEAM", { href: "#TEAM" }),
                                 )
                             ),
