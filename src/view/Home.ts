@@ -36,7 +36,7 @@ export default class Home implements View {
                         el(".text-base text-center", `
                     Kronos DAO는 클레이튼에서 가장 명망있는 DeFi 2.0 프로토콜이다. 
                     
-                    최근 APR은 x%에 육박하며, 매우 단단한 커뮤니티를 갖고 있다.`),
+                    최근 APR은 236,000%에 육박하며, 매우 단단한 커뮤니티를 갖고 있다.`),
                     ),
                     el(".buyback content-center mt-32", { id: "BUYBACK FUND" },
                         el("h1.text-5xl font-bold text-center", "BUYBACK FUND"),

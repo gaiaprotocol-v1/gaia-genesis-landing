@@ -172,7 +172,10 @@ input {
   font-style: normal;
 }
 body {
-  background: black;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif !important;
+  background: linear-gradient(#111112, #2a292a) fixed;
+  height: 100%;
+  background-repeat: no-repeat;
   color: white;
   margin: auto;
 }
