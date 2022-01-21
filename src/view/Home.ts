@@ -14,22 +14,20 @@ export default class Home implements View {
                     el("img.block lg:hidden mt-16 content-center", { src: "/images/logo-text.png", alt: "gaia protocol logo" }),
                     el("img.hidden lg:block w-1/3 mt-16 content-center", { src: "/images/logo-text.png", alt: "gaia protocol logo" }),
                     el(".story content-center mt-32",
-                        el("h1.text-5xl font-bold text-center", "STORY"),
+                        el("h1.text-5xl font-bold text-center", "What is Gaia PFP NFTs?"),
                         el(".text-base text-center", `
-                        PFP 프로젝트는 민팅 이후의 가치 부양이 굉장히 어렵다.
+                        Gaia Protocol은 최초의 투자형 pfp NFT 프로젝트입니다. 
                         
-                        이를 해소하기 위해 토큰이 채굴되는 PFP 프로젝트가 나왔으나, 채굴되는 토큰의 가치부양은 더욱 어려운 과제로 남게 되었다.
+                        투자자들의 초기 투자비용을 최대한 보장하고 지지(Backing)합니다. 
                         
-                        그리하여 기존에 가치 부양이 잘 형성되어 있는 프로토콜을 사용하여 채굴이 되는 PFP를 설계했다.
-                        
-                        > 디파이 2.0의 높은 이자율을 적용해 지속적으로 이자 채굴이 되게하는 한편, 바이백 펀드를 구성해 민팅가(원금)를 최대한 보장하여 투자 리스크를 줄인다.`)
+                        NFT 투자자들은 수준 높은 커뮤니티를 구성하고 매력적인 문화를 만들고 최고의 NFT 허브를 구축해 나갑니다.`)
                     ),
                     el(".deFi2.0 content-center mt-32", { id: "DeFi 2.0" },
-                        el("h1.text-5xl font-bold text-center", "DeFi 2.0"),
+                        el("h1.text-5xl font-bold text-center", "Why DeFi 2.0"),
                         el(".text-base text-center", `
-                        디파이 2.0의 특징은 강력한 홀더들이 많아지면 많아질수록 이자율이 늘어난다는 것이다. 
+                        DeFi 2.0 은 창의적인 방법으로 유동성을 프토토콜이 확보하고, 강력한 커뮤니티 파워에 힘입어 투자들의 이윤의 극대화를 일구어낸 성공적인 프로젝트입니다. 
                         
-                        NFT에 토큰을 영구적으로 스테이킹한다면, 다이아몬드 핸드(강성 홀더)를 뛰어넘는 인피니티 핸드가 되는 것이다.`),
+                        Gaia Protocol 의 지지하는 핵심은 NFT를 구매한 투자자들의 자산을 이에 예치함으로써 투자자들이 영구적으로 혜택을 누릴 수 있도록 하는 것입니다.`),
                     ),
                     el(".buyback content-center mt-32", { id: "BUYBACK FUND" },
                         el("h1.text-5xl font-bold text-center", "BUYBACK FUND"),
