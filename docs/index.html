@@ -6,6 +6,8 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" />
+
+    <!-- icons-->
     <link rel="apple-touch-icon" sizes="57x57" href="/images/icon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/images/icon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/images/icon/apple-icon-72x72.png">
@@ -23,6 +25,21 @@
     <meta name="msapplication-TileColor" content="#000000">
     <meta name="msapplication-TileImage" content="/images/icon/ms-icon-144x144.png">
     <meta name="theme-color" content="#000000">
+
+    <!-- TailWind CSS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Pretendard', 'sans-serif'],
+                        serif: ['Pretendard', 'serif'],
+                    },
+                }
+            }
+        }
+    </script>
     <title>Gaia Protocol</title>
     <link rel="stylesheet" type="text/css" href="/bundle.css" />
 </head>
