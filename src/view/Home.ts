@@ -10,8 +10,9 @@ export default class Home implements View {
     constructor() {
         Layout.current.content.append(
             this.container = el(".home-view flex h-screen flex-col",
-                el(".m-auto flex flex-col items-center", { id: "STORY" },
-                    el("img.lg:block w-1/2 mt-16 content-center", { src: "/images/logo-text.png", alt: "gaia protocol logo" }),
+                el(".m-auto flex flex-col items-center m-4", { id: "STORY" },
+                    el("img.block lg:hidden mt-16 content-center", { src: "/images/logo-text.png", alt: "gaia protocol logo" }),
+                    el("img.hidden lg:block w-1/3 mt-16 content-center", { src: "/images/logo-text.png", alt: "gaia protocol logo" }),
                     el(".story content-center mt-32",
                         el("h1.text-5xl font-bold text-center", "STORY"),
                         el(".text-base text-center", `
@@ -32,7 +33,8 @@ export default class Home implements View {
                     ),
                     el(".kronosDAO mt-32 flex flex-col items-center", { id: "KRONOS DAO" },
                         el("h1.text-5xl font-bold text-center", "KRONOS DAO"),
-                        el("img.lg:block center w-1/3 mt-8 rounded", { src: "/images/kronos.png" }),
+                        el("img.block lg:hidden center mt-8 rounded", { src: "/images/kronos.png" }),
+                        el("img.hidden lg:block  center w-1/3 mt-8 rounded", { src: "/images/kronos.png" }),
                         el(".text-base text-center", `
                     Kronos DAO는 클레이튼에서 가장 명망있는 DeFi 2.0 프로토콜이다. 
                     
@@ -61,15 +63,33 @@ export default class Home implements View {
                     el(".whiteList content-center mt-32", { id: "WHITELIST" },
                         el("h1.text-5xl font-bold text-center", "WHITELIST"),
                         el(".text-base text-center", `
-                        1. 화리 물량 총 4,000개 
+                        - 커뮤니티 빌딩
 
-                        2. 해당 자산 1천클에 화리 1개, 인당 5개
+                        - 민팅
+
+                        - Kronos DAO 예치
+
+                        - 이자 채굴 시스템 오픈
+
+                        - 바이백 프로토콜 개시
+
+                        - 이자 수익 원금 상환 축하 파티 개최ß
                         
-                        3. 24일 타입폼으로 신청 받기
+                        - Olympus DAO를 사용하는 V2 발행 (3D)
+                        `),
+                    ),
+                    el(".whiteList content-center mt-32", { id: "ROADMAP" },
+                        el("h1.text-5xl font-bold text-center", "ROADMAP"),
+                        el(".text-base text-center", `
+                    1. 화리 물량 총 4,000개 
 
-                        4. 2월 9일까지 자산 유지 필수, 민팅 때 자산 재체크 들어감
+                    2. 해당 자산 1천클에 화리 1개, 인당 5개
+                    
+                    3. 24일 타입폼으로 신청 받기
 
-                        5. 1월 21일 금요일 공지`),
+                    4. 2월 9일까지 자산 유지 필수, 민팅 때 자산 재체크 들어감
+
+                    5. 1월 21일 금요일 공지`),
                     ),
                     el(".team content-center mt-32", { id: "TEAM" },
                         el("h1.text-5xl font-bold text-center", "TEAM"),
@@ -106,13 +126,6 @@ export default class Home implements View {
                             `현직 게임 개발자이자 NFT 아티스트입니다. 
                             다년간 트위터 작품 활동을 통해 32만 팔로워를 보유하고 있으며, 최근에는 한국의 NFT 및 P2E 게임 프로젝트에도 참여하고 있습니다.`
                         )
-                    ),
-                    el(".faq content-center mt-32", { id: "FAQ" },
-                        el("h1.text-5xl font-bold text-center", "FAQ"),
-                        el("h3.text-2xl font-medium text-center mt-8", "Q. 한정판 NFT 여부"),
-                        el("h3.text-base text-center mt-4", "A. 없음"),
-                        el("h3.text-2xl font-medium text-center mt-8", "Q. NFT별 채굴 차등 여부"),
-                        el("h3.text-base text-center mt-4", "A. 없음"),
                     ),
                 )
             ).appendTo(BodyNode)
