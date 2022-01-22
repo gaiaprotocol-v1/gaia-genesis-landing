@@ -16,7 +16,7 @@ export default class Home implements View {
                     el(".story content-center mt-32",
                         el("h1.text-5xl font-bold text-center", "What is Gaia PFP NFTs?"),
                         el(".text-base text-center", `
-                        Gaia Protocol은 최초의 투자형 pfp NFT 프로젝트입니다. 
+                        Gaia Protocol은 최초의 투자형 PFP(프로필 이미지) NFT 프로젝트입니다. 
                         
                         투자자들의 초기 투자비용을 최대한 보장하고 지지(Backing)합니다. 
                         
