@@ -89,7 +89,7 @@ export default class Home implements View {
                         el("h1.text-5xl font-bold text-center text-primary", "PARTNER"),
                         el(".partner-container mt-16 flex md:flex-col lg:flex-row",
                             el("img.rounded h-16 md:mt-8 lg:mr-16", { src: "/images/partner/kronosDAO.svg" }),
-                            el("img.rounded h-16 md:mt-8 lg:mr-16", { src: "/images/partner/dexata.svg" }),
+                            el("img.rounded h-16 md:mt-8 lg:mr-16", { src: "/images/partner/dexataLogo.svg" }),
                             el("img.rounded h-16 md:mt-8", { src: "/images/partner/klayswap.svg" })
                         ),
                     )
