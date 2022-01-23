@@ -10,16 +10,12 @@
         }
     }
 
-    .footer-container {
-        @media @phone {
-            flex-direction: column;
-            margin-top    : 0px;
-        }
-    }
-
-    .sns-container {
-        @media @phone {
-            margin-top: 32px;
+    .team-container {
+        >.content {
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }

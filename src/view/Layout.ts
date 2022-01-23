@@ -34,7 +34,7 @@ export default class Layout implements View {
                                     el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "MINT", { href: "#MINT" }),
                                     el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "TEAM", { href: "#TEAM" }),
                                     el("a.text-gray-300 hover:bg-gray-400 hover:text-white px-3 py-2 rounded-md text-sm font-medium", "PARTNER", { href: "#PARTNER" }),
-                                )
+                                ),
                             ),
                         )
                     ),

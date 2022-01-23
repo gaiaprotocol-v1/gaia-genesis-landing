@@ -189,14 +189,9 @@ body {
   }
 }
 @media only screen and (max-width: 719px) {
-  .home-view .footer-container {
+  .home-view .team-container > .content {
+    display: flex;
     flex-direction: column;
-    margin-top: 0px;
-  }
-}
-@media only screen and (max-width: 719px) {
-  .home-view .sns-container {
-    margin-top: 32px;
   }
 }
 
