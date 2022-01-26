@@ -22,29 +22,29 @@ export default class Landing implements View {
             ),
             el(".overlay",
               el("ul.menu",
-                el("li.item", el("a.item", "WHY")),
-                el("li.item", el("a.item", "BUYBACK FUND"),),
-                el("li.item", el("a.item", "SNEAK PEEK")),
-                el("li.item", el("a.item", "TEAM")),
-                el("li.item", el("a.item", "PARTNER")),
+                el("li.item", el("a", "WHY", { href: "#WHY" })),
+                el("li.item", el("a", "BUYBACK FUND", { href: "#FUND" }),),
+                el("li.item", el("a", "SNEAK PEEK", { href: "#NFT" })),
+                el("li.item", el("a", "TEAM", { href: "#TEAM" })),
+                el("li.item", el("a", "PARTNER", { href: "#PARTNER" })),
               ),
             ),
           )
         ),
         el("main",
-          el(".init-container", { "data-aos": "fade-up" },
-            el("img", { src: "/images/logo-text.png", alt: "gaia protocol logo" }),
-            el("p", "Gaia Protocol은 최초의 투자형 PFP(프로필 이미지) NFT 프로젝트입니다.\n투자자들의 초기 투자비용을 최대한 보장하고 지지(Backing)합니다.\nNFT 투자자들은 수준 높은 커뮤니티를 구성하고 매력적인 문화를 만들고 최고의 NFT 허브를 구축해 나갑니다.")
+          el(".init-container", { id: "WHY" },
+            el("img", { src: "/images/logo-text.png", alt: "gaia protocol logo", "data-aos": "fade-up", }),
+            el("p", { "data-aos": "fade-up" }, "Gaia Protocol은 최초의 투자형 PFP(프로필 이미지) NFT 프로젝트입니다.\n투자자들의 초기 투자비용을 최대한 보장하고 지지(Backing)합니다.\nNFT 투자자들은 수준 높은 커뮤니티를 구성하고 매력적인 문화를 만들고 최고의 NFT 허브를 구축해 나갑니다.")
           ),
           el(".why-container", { "data-aos": "fade-up" },
             el("h2", "WHY DeFi2.0?"),
             el("p", "DeFi 2.0 은 창의적인 방법으로 유동성을 프토토콜이 확보하고,\n강력한 커뮤니티 파워에 힘입어 투자들의 이윤의 극대화를 일구어낸 성공적인 프로젝트입니다.\nGaia Protocol 의 지지하는 핵심은 NFT를 구매한 투자자들의 자산을 이에 예치함으로써 투자자들이 영구적으로 혜택을 누릴 수 있도록 하는 것입니다.")
           ),
-          el(".buyback-container", { "data-aos": "fade-up" },
-            el("h2", "BUYBACK FUND"),
-            el("p", "DeFi 2.0 은 창의적인 방법으로 유동성을 프토토콜이 확보하고,\n강력한 커뮤니티 파워에 힘입어 투자들의 이윤의 극대화를 일구어낸 성공적인 프로젝트입니다.\nGaia Protocol 의 지지하는 핵심은 NFT를 구매한 투자자들의 자산을 이에 예치함으로써 투자자들이 영구적으로 혜택을 누릴 수 있도록 하는 것입니다.")
+          el(".buyback-container", { id: "FUND" },
+            el("h2", "BUYBACK FUND", { "data-aos": "fade-up", }),
+            el("p", { "data-aos": "fade-up", }, "DeFi 2.0 은 창의적인 방법으로 유동성을 프토토콜이 확보하고,\n강력한 커뮤니티 파워에 힘입어 투자들의 이윤의 극대화를 일구어낸 성공적인 프로젝트입니다.\nGaia Protocol 의 지지하는 핵심은 NFT를 구매한 투자자들의 자산을 이에 예치함으로써 투자자들이 영구적으로 혜택을 누릴 수 있도록 하는 것입니다.")
           ),
-          el(".nft-container",
+          el(".nft-container", { id: "NFT" },
             el("h2", "SNEAK PEEK", { "data-aos": "fade-up" }),
             el(".swiper-slide",
               el("img", { src: "/images/nft/sneakpeek1.jpeg", "data-aos": "fade-up" }),
@@ -57,7 +57,7 @@ export default class Landing implements View {
             ),
             el("p", "본 이미지는 스닉픽으로 실제 NFT 민팅되는 NFT와 다를 수 있습니다.", { "data-aos": "fade-up" })
           ),
-          el(".mint-container", { "data-aos": "fade-up" },
+          el(".mint-container", { id: "MINT" },
             el("h2", "MINT", { "data-aos": "fade-up" },),
             el("h3", "Pre Sale", { "data-aos": "fade-up" },),
             el(".caption", "(Whitelist)", { "data-aos": "fade-up" },),
@@ -69,7 +69,7 @@ export default class Landing implements View {
             el("p", "1,000 Klay", { "data-aos": "fade-up" },),
             el("p", "총 6,000개", { "data-aos": "fade-up" },),
           ),
-          el(".team-container",
+          el(".team-container", { id: "TEAM" },
             el("h2", "TEAM", { "data-aos": "fade-up" },),
             el(".swiper-slide",
               el(".team", { "data-aos": "fade-up" },
@@ -116,12 +116,12 @@ export default class Landing implements View {
               ),
             )
           ),
-          el(".partner-container", { "data-aos": "fade-up" },
-            el("h2", "PARTNER"),
+          el(".partner-container", { id: "PARTNER" },
+            el("h2", "PARTNER", { "data-aos": "fade-up" }),
             el(".swiper-slide",
-              el("img", { src: "/images/partner/dexata.svg" }),
-              el("img", { src: "/images/partner/kronosDAO.svg" }),
-              el("img", { src: "/images/partner/klayswap.svg" })
+              el("img", { src: "/images/partner/dexata.svg", "data-aos": "fade-up" }),
+              el("img", { src: "/images/partner/kronosDAO.svg", "data-aos": "fade-up" }),
+              el("img", { src: "/images/partner/klayswap.svg", "data-aos": "fade-up" })
             )
           ),
         ),

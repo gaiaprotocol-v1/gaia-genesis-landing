@@ -215,16 +215,19 @@ body {
 }
 .landing-view > header > .nav > .overlay > .menu > .item {
   float: left;
+}
+.landing-view > header > .nav > .overlay > .menu > .item > a {
   cursor: pointer;
-  color: #e4e8eb;
   padding: 8px 12px 8px 12px;
   border-radius: 4px;
   font-size: 0.875rem;
+  text-decoration: none;
+  color: white;
 }
-.landing-view > header > .nav > .overlay > .menu > .item:hover {
+.landing-view > header > .nav > .overlay > .menu > .item > a:hover {
   color: rgba(177, 156, 118, 0.9);
 }
-.landing-view > header > .nav > .overlay > .menu > .item:active {
+.landing-view > header > .nav > .overlay > .menu > .item > a:active {
   color: #b19c76;
 }
 @media only screen and (max-width: 719px) {
