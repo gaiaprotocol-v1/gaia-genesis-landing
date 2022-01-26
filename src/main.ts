@@ -1,11 +1,12 @@
 import { SkyRouter } from "skyrouter";
-import Layout from "./view/Layout";
-import Home from "./view/Home";
+import Landing from "./view/Landing";
+
+import App from "./view/App/Home";
 
 (async () => {
 
-    SkyRouter.route("**", Layout);
-    SkyRouter.route("", Home);
+    SkyRouter.route("", Landing);
+    SkyRouter.route("/app", App);
 
     if (sessionStorage.__spa_path) {
         SkyRouter.go(sessionStorage.__spa_path);
