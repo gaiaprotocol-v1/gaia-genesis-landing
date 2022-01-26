@@ -177,122 +177,124 @@ body {
   margin: auto;
 }
 .landing-view > header {
-  width: 100%;
   display: flex;
-  align-items: center;
+  justify-items: center;
+  width: 100%;
   background-color: black;
   height: 52px;
   position: fixed;
   top: 0;
-  overflow: hidden;
+  z-index: 3;
 }
 .landing-view > header > .nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   width: 100%;
   max-width: 1240px;
   margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 .landing-view > header > .nav > .logo {
   flex-grow: 1;
 }
-.landing-view > header > .nav > .logo > img {
+.landing-view > header > .nav > .logo > a > img {
   height: 36px;
   padding-left: 8px;
 }
-.landing-view > header > .nav > .menu-btn {
+.landing-view > header > .nav > .menu-btn,
+.landing-view > header > .nav .menu-icon {
   display: none;
 }
-.landing-view > header > .nav > .menu-icon {
-  display: none;
-}
-.landing-view > header > .nav > .overlay > .menu {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-}
-.landing-view > header > .nav > .overlay > .menu > .item {
+.landing-view > header > .nav > .menu > .item {
   float: left;
 }
-.landing-view > header > .nav > .overlay > .menu > .item > a {
+.landing-view > header > .nav > .menu > .item > a {
   cursor: pointer;
   padding: 8px 12px 8px 12px;
-  border-radius: 4px;
   font-size: 0.875rem;
   text-decoration: none;
   color: white;
 }
-.landing-view > header > .nav > .overlay > .menu > .item > a:hover {
+.landing-view > header > .nav > .menu > .item > a:hover {
   color: rgba(177, 156, 118, 0.9);
 }
-.landing-view > header > .nav > .overlay > .menu > .item > a:active {
+.landing-view > header > .nav > .menu > .item > a:active {
   color: #b19c76;
 }
 @media only screen and (max-width: 719px) {
   .landing-view > header > .nav > .menu-btn {
     display: none;
   }
-  .landing-view > header > .nav > .menu-btn:checked ~ .overlay {
-    visibility: visible;
+  .landing-view > header > .nav > .menu-btn:checked ~ .menu {
+    display: block;
+    max-height: 52px;
   }
-  .landing-view > header > .nav > .menu-btn:checked ~ .menu-icon:hover span,
-  .landing-view > header > .nav > .menu-btn:checked ~ .menu-icon span {
+  .landing-view > header > .nav > .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
   }
-  .landing-view > header > .nav > .menu-btn:checked ~ .menu-icon span:before {
-    transform: rotate(45deg) translate(7px, 7px);
-    opacity: 1;
+  .landing-view > header > .nav > .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
   }
-  .landing-view > header > .nav > .menu-btn:checked ~ .menu-icon span:after {
-    transform: rotate(-45deg) translate(7px, -7px);
+  .landing-view > header > .nav > .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  .landing-view > header > .nav > .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .landing-view > header > .nav > .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
   }
   .landing-view > header > .nav > .menu-icon {
-    position: absolute;
-    right: 2em;
-    top: 3em;
-    padding: 26px 11px;
-    z-index: 5;
     cursor: pointer;
+    display: inline-block;
+    padding: 28px 20px;
+    position: relative;
     user-select: none;
   }
-  .landing-view > header > .nav > .menu-icon > span {
-    height: 3px;
-    width: 24px;
-    border-radius: 0.5px;
-    background-color: white;
-    position: relative;
+  .landing-view > header > .nav > .menu-icon > .navicon {
+    background: white;
     display: block;
-    transition: all 0.2s ease-in-out;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 18px;
   }
-  .landing-view > header > .nav > .menu-icon > span:before {
-    top: -8px;
-    visibility: visible;
-  }
-  .landing-view > header > .nav > .menu-icon > span:after {
-    top: 8px;
-  }
-  .landing-view > header > .nav > .menu-icon > span:before,
-  .landing-view > header > .nav > .menu-icon > span:after {
-    height: 3px;
-    width: 24px;
-    border-radius: 0.5px;
-    background-color: white;
+  .landing-view > header > .nav > .menu-icon .navicon:before,
+  .landing-view > header > .nav > .menu-icon .navicon:after {
+    background: white;
+    content: '';
+    display: block;
+    height: 100%;
     position: absolute;
-    content: "";
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-out;
+    width: 100%;
   }
-  .landing-view > header > .nav > .overlay {
-    height: 100vh;
-    width: 100vw;
-    background: #ec6451;
-    z-index: 2;
-    visibility: hidden;
-    position: fixed;
+  .landing-view > header > .nav > .menu-icon .navicon:before {
+    top: 5px;
   }
-  .landing-view > header > .nav > .overlay.active {
-    visibility: visible;
+  .landing-view > header > .nav > .menu-icon .navicon:after {
+    top: -5px;
+  }
+  .landing-view > header > .nav > .menu {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+  }
+  .landing-view > header > .nav > .menu .item {
+    display: block;
+    width: 100%;
+    background-color: black;
+  }
+  .landing-view > header > .nav > .menu .item a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+  .landing-view > header > .nav > .menu .item a:hover {
+    color: white;
+    background-color: #333332;
   }
 }
 .landing-view > main {
@@ -327,6 +329,7 @@ body {
   color: #e0d8c8;
 }
 .landing-view > main > .why-container > h2,
+.landing-view > main .gaia-container > h2,
 .landing-view > main .buyback-container > h2 {
   font-family: trajan-pro-3, serif;
   font-weight: 700;
@@ -335,6 +338,7 @@ body {
   color: #b19c76;
 }
 .landing-view > main > .why-container > p,
+.landing-view > main .gaia-container > p,
 .landing-view > main .buyback-container > p {
   margin-top: 1rem;
   line-height: 1.5rem;

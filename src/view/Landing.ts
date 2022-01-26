@@ -11,34 +11,36 @@ export default class Landing implements View {
 
     BodyNode.append(
       (this.container = el(".landing-view",
-        el("header",
+        el("header.header",
           el(".nav",
             el(".logo",
-              el("img", { src: "/images/logo.png", alt: "gaia protocol logo" }),
+              el("a", { href: "#init" }, el("img", { src: "/images/logo.png", alt: "gaia protocol logo" })),
             ),
-            el("input.menu-btn", { type: "checkbox" }),
+            el("input.menu-btn", { type: "checkbox", id: "menu-btn" }),
             el("label.menu-icon", { for: "menu-btn" },
-              el("span")
+              el("span.navicon")
             ),
-            el(".overlay",
-              el("ul.menu",
-                el("li.item", el("a", "WHY", { href: "#WHY" })),
-                el("li.item", el("a", "BUYBACK FUND", { href: "#FUND" }),),
-                el("li.item", el("a", "SNEAK PEEK", { href: "#NFT" })),
-                el("li.item", el("a", "TEAM", { href: "#TEAM" })),
-                el("li.item", el("a", "PARTNER", { href: "#PARTNER" })),
-              ),
+            el("ul.menu",
+              el("li.item", el("a", "WHY", { href: "#WHY" })),
+              el("li.item", el("a", "BUYBACK FUND", { href: "#FUND" }),),
+              el("li.item", el("a", "SNEAK PEEK", { href: "#NFT" })),
+              el("li.item", el("a", "TEAM", { href: "#TEAM" })),
+              el("li.item", el("a", "PARTNER", { href: "#PARTNER" })),
             ),
           )
         ),
         el("main",
-          el(".init-container", { id: "WHY" },
+          el(".init-container", { id: "init" },
             el("img", { src: "/images/logo-text.png", alt: "gaia protocol logo", "data-aos": "fade-up", }),
             el("p", { "data-aos": "fade-up" }, "Gaia Protocol은 최초의 투자형 PFP(프로필 이미지) NFT 프로젝트입니다.\n투자자들의 초기 투자비용을 최대한 보장하고 지지(Backing)합니다.\nNFT 투자자들은 수준 높은 커뮤니티를 구성하고 매력적인 문화를 만들고 최고의 NFT 허브를 구축해 나갑니다.")
           ),
-          el(".why-container", { "data-aos": "fade-up" },
-            el("h2", "WHY DeFi2.0?"),
-            el("p", "DeFi 2.0 은 창의적인 방법으로 유동성을 프토토콜이 확보하고,\n강력한 커뮤니티 파워에 힘입어 투자들의 이윤의 극대화를 일구어낸 성공적인 프로젝트입니다.\nGaia Protocol 의 지지하는 핵심은 NFT를 구매한 투자자들의 자산을 이에 예치함으로써 투자자들이 영구적으로 혜택을 누릴 수 있도록 하는 것입니다.")
+          el(".gaia-container", { id: "WHY" },
+            el("h2", "Why Gaia Protocol?", { "data-aos": "fade-up" },),
+            el("p", { "data-aos": "fade-up" }, "Gaia Protocol NFT 홀더는 민팅 가격의 절반이 Defi 2.0에 예치되어 복리이자혜택을 영구적으로 받을 수 있게 됩니다.\n 또한 NFT를 소유한 홀더들을 중심으로 NFT & Crypto 투자자들의 사교모임을 형성하여 매력적이고 강력한 커뮤니티 형성을 목표로 합니다.\n 이를 통해 가이아 프로토콜에서 민팅 된 NFT 의 가치상승을 기대할 수 있게 됩니다.\n 최종적으로 가이아 프로토콜이 건강하고 견고하게 성장하는 것을 목표하고 있으며 이는 클레이튼 생태계가 더욱 확장되는 것을 의미합니다.")
+          ),
+          el(".why-container",
+            el("h2", "WHY DeFi 2.0?", { "data-aos": "fade-up" },),
+            el("p", { "data-aos": "fade-up" }, "DeFi 2.0 은 창의적인 방법으로 유동성을 프토토콜이 확보하고,\n강력한 커뮤니티 파워에 힘입어 투자들의 이윤의 극대화를 일구어낸 성공적인 프로젝트입니다.\nGaia Protocol 의 지지하는 핵심은 NFT를 구매한 투자자들의 자산을 이에 예치함으로써 투자자들이 영구적으로 혜택을 누릴 수 있도록 하는 것입니다.")
           ),
           el(".buyback-container", { id: "FUND" },
             el("h2", "BUYBACK FUND", { "data-aos": "fade-up", }),
