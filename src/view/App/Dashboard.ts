@@ -1,15 +1,15 @@
 import { BodyNode, DomNode, el } from "@hanul/skynode";
 import { View, ViewParams } from "skyrouter";
-import Layout from "../Layout";
+import AppLayout from "./AppLayout";
 
-export default class Home implements View {
+export default class Mining implements View {
 
     private container: DomNode;
     private interval: any;
 
     constructor() {
-        Layout.current.content.append(
-            this.container = el(".main-view",
+        AppLayout.current.content.append(
+            this.container = el(".dashboard-view", { "data-aos": "zoom-in" },
             ).appendTo(BodyNode)
         )
     }
