@@ -47,21 +47,19 @@
                         color          : white;
 
                         &:hover {
-                            color: rgba(177, 156, 118, 0.9);
+                            background-color: rgba(177, 156, 118, 0.5);
+                            border-radius   : 4px;
                         }
 
                         &:active {
-                            color: rgba(177, 156, 118, 1);
+                            background-color: rgba(177, 156, 118, 0.7);
+                            border-radius   : 4px;
                         }
                     }
 
-                    >button {
-                        cursor       : pointer;
-                        display      : flex;
-                        align-items  : center;
-                        padding      : 8px 12px 9px;
-                        font-weight  : 700;
-                        border-radius: 4px;
+                    >.enter-app {
+                        background-color: rgba(177, 156, 118, 0.5);
+                        border-radius   : 4px;
                     }
                 }
             }
@@ -142,15 +140,29 @@
                         display         : block;
                         width           : 100%;
                         background-color: black;
+                        min-height      : 54px;
+
+                        &:hover {
+                            color           : white;
+                            background-color: #333332;
+                        }
 
                         a {
                             display        : block;
                             padding        : 20px 20px;
                             text-decoration: none;
+                        }
+
+                        >.enter-app {
+                            background-color: transparent;
+                            color           : rgba(177, 156, 118, 1);
 
                             &:hover {
-                                color           : white;
-                                background-color: #333332;
+                                color: white;
+                            }
+
+                            &:active {
+                                color: white;
                             }
                         }
                     }

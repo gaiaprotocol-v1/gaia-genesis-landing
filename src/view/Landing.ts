@@ -27,7 +27,7 @@ export default class Landing implements View {
               el("li.item", el("a", "SNEAK PEEK", { href: "#NFT" })),
               el("li.item", el("a", "TEAM", { href: "#TEAM" })),
               el("li.item", el("a", "PARTNER", { href: "#PARTNER" })),
-              el("li.item", el("button", "Enter App", { click: () => { new Alert("현재 준비중입니다.", "Gaia Protocol은 2022년 2월 10일에 민팅이 이루어 집니다.") } })),
+              el("li.item", el("a.enter-app", "Enter App", { click: () => { new Alert("현재 준비중입니다.", "Gaia Protocol은 2022년 2월 10일에 민팅이 이루어 집니다.") } })),
             ),
           )
         ),
