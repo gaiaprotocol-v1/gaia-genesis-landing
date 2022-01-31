@@ -573,11 +573,12 @@ body {
     grid-template-columns: 1fr;
   }
 }
-.landing-view > main > .team-container > .swiper-slide > .team > h3 {
+.landing-view > main > .team-container > .swiper-slide > .team > a {
   margin-top: 1rem;
   font-size: 2rem;
   color: #e0d8c8;
   font-weight: 700;
+  text-decoration: none;
 }
 .landing-view > main > .team-container > .swiper-slide > .team > h4 {
   margin-top: 0.5rem;
