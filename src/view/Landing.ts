@@ -46,7 +46,7 @@ export default class Landing implements View {
           ),
           el(".buyback-container", { id: "FUND" },
             el("h2", "BUYBACK FUND", { "data-aos": "fade-up", }),
-            el("p", { "data-aos": "fade-up", }, "DeFi 2.0 은 창의적인 방법으로 유동성을 프토토콜이 확보하고,\n강력한 커뮤니티 파워에 힘입어 투자들의 이윤의 극대화를 일구어낸 성공적인 프로젝트입니다.\nGaia Protocol 의 지지하는 핵심은 NFT를 구매한 투자자들의 자산을 이에 예치함으로써 투자자들이 영구적으로 혜택을 누릴 수 있도록 하는 것입니다.")
+            el("p", { "data-aos": "fade-up", }, "Gaia Protocol 은 투자자들의 투자원금 보장을 위해 초기 민팅금액의 45%를 Buyback 펀드로 운용됩니다. \n 이를 통해 투자자들은 투자금의 손실에 대한 심리적 부담 없이 민팅에 참여할 수 있으며 언제든지 가이아 홈페이지를 통해 바이백을 신청할 수 있습니다. ")
           ),
           el(".nft-container", { id: "NFT" },
             el("h2", "SNEAK PEEK", { "data-aos": "fade-up" }),
