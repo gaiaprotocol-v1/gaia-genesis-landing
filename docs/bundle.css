@@ -597,6 +597,11 @@ body {
   width: 100%;
   transform: rotateY(-180deg);
 }
+@media only screen and (max-width: 719px) {
+  .landing-view > main > .team-container > .swiper-slide > .team > .content > .back {
+    top: 10%;
+  }
+}
 .landing-view > main > .team-container > .swiper-slide > .team > .content > .back > a {
   margin-top: 1rem;
   font-size: 2rem;
