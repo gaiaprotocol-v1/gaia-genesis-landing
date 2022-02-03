@@ -48,6 +48,7 @@ export default class Landing implements View {
             el("h2", "BUYBACK FUND", { "data-aos": "fade-up", }),
             el("p", { "data-aos": "fade-up", }, "Gaia Protocol 은 투자자들의 투자원금 보장을 위해 초기 민팅금액의 45%를 Buyback 펀드로 운용됩니다. \n 이를 통해 투자자들은 투자금의 손실에 대한 심리적 부담 없이 민팅에 참여할 수 있으며 언제든지 가이아 홈페이지를 통해 바이백을 신청할 수 있습니다. ")
           ),
+          el("img.fundflow", { "data-aos": "fade-up", src: "/images/fundflow.png" }),
           el(".nft-container", { id: "NFT" },
             el("h2", "SNEAK PEEK", { "data-aos": "fade-up" }),
             el(".swiper-slide",
