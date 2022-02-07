@@ -213,7 +213,7 @@ export default class Landing implements View {
       ))
     );
     this.init();
-    select.domElement.value = BrowserInfo.language.substring(0, 5);
+    select.domElement.value = BrowserInfo.language;
   }
 
   private async init() {
