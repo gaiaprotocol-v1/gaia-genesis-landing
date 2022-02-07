@@ -34,8 +34,8 @@ export default class Landing implements View {
               el("li.item", select = el("select.language-select",
                 el("option", "한국어 🇰🇷 ", { value: "ko" }),
                 el("option", "English 🇺🇸 ", { value: "en" }),
-                el("option", "繁體字 🇨🇳 ", { value: "zh-SC" }),
-                el("option", "简体字 🇨🇳 ", { value: "zh-TC" }),
+                el("option", "繁體字 🇨🇳 ", { value: "zh-TC" }),
+                el("option", "简体字 🇨🇳 ", { value: "zh-SC" }),
                 {
                   change: () => {
                     BrowserInfo.changeLanguage(select.domElement.value);
