@@ -374,6 +374,20 @@ body {
   background-color: rgba(177, 156, 118, 0.5);
   border-radius: 4px;
 }
+.landing-view > header > .nav > .menu > .item > select {
+  cursor: pointer;
+  padding: 5px 12px 5px 12px;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 4px;
+}
+.landing-view > header > .nav > .menu > .item > select:hover {
+  background-color: rgba(177, 156, 118, 0.5);
+  border-radius: 4px;
+}
 @media only screen and (max-width: 719px) {
   .landing-view > header > .nav > .menu-btn {
     display: none;
@@ -459,6 +473,15 @@ body {
   }
   .landing-view > header > .nav > .menu .item > .enter-app:active {
     color: white;
+  }
+  .landing-view > header > .nav > .menu .item > select {
+    width: 100%;
+    height: 100%;
+    padding: 20px 16px;
+    background-color: transparent;
+  }
+  .landing-view > header > .nav > .menu .item > select:hover {
+    background-color: #333332;
   }
 }
 .landing-view > main {

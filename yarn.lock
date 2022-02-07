@@ -695,6 +695,13 @@
   "resolved" "https://registry.npmjs.org/@types/node/-/node-12.20.41.tgz"
   "version" "12.20.41"
 
+"@types/papaparse@^5.2.4":
+  "integrity" "sha512-BNbCHJkTE4RwmAFkCxEalET4mDvGr/1ld7ZtQ4i/laWI/iiVt+GL07stdvufle4KfywyvloqqpIiJscXNCrKxA=="
+  "resolved" "https://registry.npmjs.org/@types/papaparse/-/papaparse-5.3.2.tgz"
+  "version" "5.3.2"
+  dependencies:
+    "@types/node" "*"
+
 "@types/pbkdf2@^3.0.0":
   "integrity" "sha512-Cf63Rv7jCQ0LaL8tNXmEyqTHuIJxRdlS5vMh1mj5voN4+QFhVZnlZruezqpWYDiJ8UTzhP0VmeLXCmBk66YrMQ=="
   "resolved" "https://registry.npmjs.org/@types/pbkdf2/-/pbkdf2-3.1.0.tgz"
@@ -3892,6 +3899,14 @@
   "resolved" "https://registry.npmjs.org/ms/-/ms-2.1.2.tgz"
   "version" "2.1.2"
 
+"msg.js@^0.0.2":
+  "integrity" "sha512-pGA0MX0WthWSu5A5fcaG1LZhUuEdGS57EZzcy69kbtPlFEV5/4n4WzFhEpnLZPKch85DX7Y3d2Yst9DiutkOWg=="
+  "resolved" "https://registry.npmjs.org/msg.js/-/msg.js-0.0.2.tgz"
+  "version" "0.0.2"
+  dependencies:
+    "@types/papaparse" "^5.2.4"
+    "papaparse" "^5.3.0"
+
 "multibase@^0.7.0":
   "integrity" "sha512-TW8q03O0f6PNFTQDvh3xxH03c8CjGaaYrjkl9UQPG6rz53TQzzxJVCIWVjzcbN/Q5Y53Zd0IBQBMVktVgNx4Fg=="
   "resolved" "https://registry.npmjs.org/multibase/-/multibase-0.7.0.tgz"
@@ -4129,6 +4144,11 @@
   "integrity" "sha512-R4nPAVTAU0B9D35/Gk3uJf/7XYbQcyohSKdvAxIRSNghFl4e71hVoGnBNQz9cWaXxO2I10KTC+3jMdvvoKw6dQ=="
   "resolved" "https://registry.npmjs.org/p-try/-/p-try-2.2.0.tgz"
   "version" "2.2.0"
+
+"papaparse@^5.3.0":
+  "integrity" "sha512-Dbt2yjLJrCwH2sRqKFFJaN5XgIASO9YOFeFP8rIBRG2Ain8mqk5r1M6DkfvqEVozVcz3r3HaUGw253hA1nLIcA=="
+  "resolved" "https://registry.npmjs.org/papaparse/-/papaparse-5.3.1.tgz"
+  "version" "5.3.1"
 
 "parse-asn1@^5.0.0", "parse-asn1@^5.1.5":
   "integrity" "sha512-RnZRo1EPU6JBnra2vGHj0yhp6ebyjBZpmUCLHWiFhxlzvBCCpAuZ7elsBp1PVAbQN0/04VD/19rfzlBSwLstMw=="

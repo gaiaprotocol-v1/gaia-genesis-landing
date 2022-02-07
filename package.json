@@ -13,6 +13,7 @@
         "ethers": "^5.0.32",
         "klip-sdk": "^2.0.1",
         "less": "^4.1.1",
+        "msg.js": "^0.0.2",
         "skyrouter": "^0.0.8",
         "skyutil": "^0.0.12",
         "slick-carousel": "^1.8.1",
