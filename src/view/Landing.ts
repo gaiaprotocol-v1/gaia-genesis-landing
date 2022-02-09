@@ -74,9 +74,7 @@ export default class Landing implements View {
                             el("img", { src: "/images/nft/sneakpeek6.jpeg", "data-aos": "fade-up" }),
                             el("img", { src: "/images/nft/sneakpeek7.jpeg", "data-aos": "fade-up" }),
                             el("img", { src: "/images/nft/sneakpeek8.jpeg", "data-aos": "fade-up" }),
-                            el("img", { src: "/images/nft/sneakpeek9.jpeg", "data-aos": "fade-up" }),
                         ),
-                        el("p", msg("SNEAK_PEEK_DESC"), { "data-aos": "fade-up" })
                     ),
                     el(".mint-container", { id: "MINT" },
                         el("h2", msg("MINT_TITLE"), { "data-aos": "fade-up" },),
