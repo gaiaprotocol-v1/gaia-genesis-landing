@@ -30,7 +30,7 @@ export default class Landing implements View {
                             el("li.item", el("a", msg("SNEAK_PEEK_MENU"), { href: "#NFT" })),
                             el("li.item", el("a", msg("TEAM_MENU"), { href: "#TEAM" })),
                             el("li.item", el("a", msg("PARTNER_MENU"), { href: "#PARTNER" })),
-                            el("li.item", el("a.enter-app", "Mint", { href: "http://mint.gaiaprotocol.com/", target: "_blank" })),
+                            el("li.item", el("a.enter-app", "Enter App", { href: "http://app.gaiaprotocol.com", target: "_blank" })),
                             el("li.item", select = el("select.language-select",
                                 el("option", "한국어 🇰🇷 ", { value: "ko" }),
                                 el("option", "English 🇺🇸 ", { value: "en" }),
