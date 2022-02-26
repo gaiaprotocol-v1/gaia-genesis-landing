@@ -192,7 +192,7 @@ export default class Landing implements View {
                             el("a.opensea", { href: "https://opensea.io/collection/gaia-kronos", target: "_blank" },
                                 el("img", { src: "/images/community/opensea.svg", width: "40" }),
                             ),
-                            el("a.discord", { href: "https://discord.com/invite/SjM4meh3hd", target: "_blank" },
+                            el("a.discord", { href: "https://discord.gg/gaia", target: "_blank" },
                                 el("img", { src: "/images/community/discord.svg" }),
                             ),
                             el("a.twitter", { href: "https://twitter.com/gaia_protocol", target: "_blank" },

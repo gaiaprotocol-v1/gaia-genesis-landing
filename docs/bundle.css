@@ -171,10 +171,9 @@ input {
 }
 body {
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
-  scroll-behavior: smooth;
   background: linear-gradient(#111112, #2a292a) fixed;
-  color: white;
   margin: auto;
+  color: white;
 }
 .popup-background {
   position: fixed;
@@ -225,7 +224,7 @@ body {
   background-color: rgba(247, 222, 165, 0.5);
 }
 .dialogue.alert > .button-container > button:active {
-  background-color: "#b19c76";
+  background-color: #b19c76;
 }
 .dialogue.confirm {
   position: relative;
@@ -263,7 +262,7 @@ body {
   background-color: rgba(247, 222, 165, 0.8);
 }
 .dialogue.confirm > .button-container > button:active {
-  background-color: "#b19c76";
+  background-color: #b19c76;
 }
 .dialogue.prompt {
   position: relative;
@@ -298,10 +297,10 @@ body {
   border: 1px solid #e4e8eb;
 }
 .dialogue.prompt > .input-container > input:hover {
-  border: 1px solid "#b19c76";
+  border: 1px solid #b19c76;
 }
 .dialogue.prompt > .input-container > input:focus {
-  border: 1px solid "#b19c76";
+  border: 1px solid #b19c76;
 }
 .dialogue.prompt > .button-container {
   display: flex;
@@ -319,7 +318,7 @@ body {
   background-color: rgba(247, 222, 165, 0.8);
 }
 .dialogue.prompt > .button-container > button:active {
-  background-color: "#b19c76";
+  background-color: #b19c76;
 }
 .landing-view > header {
   display: flex;
@@ -504,14 +503,16 @@ body {
   padding-top: 4rem;
 }
 .landing-view > main > .init-container > img {
-  width: 50%;
+  width: 35%;
+  margin: 32px;
 }
 @media only screen and (max-width: 719px) {
   .landing-view > main > .init-container > img {
-    width: 100%;
+    width: 80%;
   }
 }
 .landing-view > main > .init-container > p {
+  margin-top: 32px;
   line-height: 1.4rem;
   color: #e0d8c8;
 }
