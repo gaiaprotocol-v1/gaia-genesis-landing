@@ -317,6 +317,33 @@
                 margin-top: 1rem;
                 color     : #e0d8c8;
             }
+
+            >a {
+                margin-top      : 32px;
+                cursor          : pointer;
+                display         : flex;
+                align-items     : center;
+                padding         : 14px 100px;
+                margin-left     : 4px;
+                border-radius   : 4px;
+                margin-right    : 8px;
+                background-color: rgba(224, 216, 200, 1);
+                color           : black;
+
+                >img {
+                    height: 48px;
+                }
+
+                &:hover {
+                    background-color: rgba(224, 216, 200, 0.9);
+                    color           : black;
+                }
+
+                &:active {
+                    background-color: rgba(224, 216, 200, 0.8);
+                    color           : black;
+                }
+            }
         }
 
         >.team-container {

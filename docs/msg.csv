@@ -20,7 +20,8 @@ BUYBACK_FUND_DESC,Gaia Kronos 은 초기 민팅금액의 45%를 Buyback 펀드�
 SNEAK_PEEK_TITLE,SNEAK PEEK,SNEAK PEEK,搶先看,抢先看
 SNEAK_PEEK_DESC,본 이미지는 스닉픽으로 실제 NFT 민팅되는 NFT와 다를 수 있습니다.,Real image of NFTs may differ from Sneak Peek design,搶先看只供參考，可能和真正圖片有偏差。,抢先看只供参考，可能和真正图片有偏差。
 MINT_TITLE,MINT,MINT,鑄幣,铸币
-PRE_SALE_TITLE,Pre Sale,Pre-Sale,預售,预售
+PRE_SALE_TITLE,민팅은 종료되었습니다.,Minting is over.,
+MINT_DESC,오픈씨에서 가이아 크로노스를 구매 할 수 있습니다.,You can purchase GaiaKronos at OpenSea.,
 PRE_SALE_DESC1,(Whitelist),(Whitelist),（白名单）,（白名单）
 PRE_SALE_DESC2,2월 10일 밤 10:00시,10th of February 22:00 (UTC + 9),2022年2月10日晚上10點 (UTC+9),2022年2月10日晚上10点 (UTC+9)
 PRE_SALE_DESC3,"1,000 Klay","1,000 Klay","1,000 Klay","1,000 Klay"

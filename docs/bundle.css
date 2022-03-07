@@ -588,6 +588,29 @@ body {
   margin-top: 1rem;
   color: #e0d8c8;
 }
+.landing-view > main > .mint-container > a {
+  margin-top: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 14px 100px;
+  margin-left: 4px;
+  border-radius: 4px;
+  margin-right: 8px;
+  background-color: #e0d8c8;
+  color: black;
+}
+.landing-view > main > .mint-container > a > img {
+  height: 48px;
+}
+.landing-view > main > .mint-container > a:hover {
+  background-color: rgba(224, 216, 200, 0.9);
+  color: black;
+}
+.landing-view > main > .mint-container > a:active {
+  background-color: rgba(224, 216, 200, 0.8);
+  color: black;
+}
 .landing-view > main > .team-container > h2 {
   font-family: trajan-pro-3, serif;
   font-weight: 700;
