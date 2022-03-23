@@ -93,7 +93,7 @@ export default class Landing implements View {
                                         el("img", { src: "/images/team/sim-young-jae.png" })
                                     ),
                                     el(".back",
-                                        el("a", msg("TEAM_NAME_TITLE1"), { href: "https://twitter.com/DSC_Hanul", target: "_blank" }),
+                                        el("a", msg("TEAM_NAME_TITLE1"), { href: "https://twitter.com/gaia_yj", target: "_blank" }),
                                         el("h4", msg("TEAM_ROLE_DESC1")),
                                         el("p",
                                             msg("TEAM_NAME_DESC1"),
